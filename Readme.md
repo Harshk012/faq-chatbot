@@ -267,3 +267,4 @@ The pipeline runs on every push to `main`:
 | **GitHub Actions pipeline** | Test → Build → Push on main branch |
 | **DockerHub images** | Tagged with `latest` and `sha-*` |
 | **README** | Architecture diagram, setup guide, Neuro-SAN explanation |
+# FAQ Chatbot - Triggered CI/CD
