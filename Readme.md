@@ -230,28 +230,17 @@ Health check endpoint.
 
 ## 🐳 Docker Images (DockerHub)
 
-| Image | Link |
-|-------|------|
-| Backend | `docker pull YOUR_DOCKERHUB_USERNAME/faq-chatbot-backend:latest` |
-| Frontend | `docker pull YOUR_DOCKERHUB_USERNAME/faq-chatbot-frontend:latest` |
+| Image | Pull Command |
+|-------|-------------|
+| Backend | `docker pull harsh782/faq-chatbot-backend:latest` |
+| Frontend | `docker pull harsh782/faq-chatbot-frontend:latest` |
 
----
+## 🔗 Links
 
-## ⚙️ GitHub Actions Setup
-
-Add these secrets to your GitHub repository (`Settings → Secrets → Actions`):
-
-| Secret | Description |
-|--------|-------------|
-| `DOCKERHUB_USERNAME` | Your DockerHub username |
-| `DOCKERHUB_TOKEN` | DockerHub access token (not password) |
-
-The pipeline runs on every push to `main`:
-1. ✅ **Test backend** — install deps, lint, run pytest
-2. ✅ **Test frontend** — install deps, build React app
-3. 🐳 **Build & Push** — multi-arch Docker images pushed to DockerHub with `latest` + `sha-*` tags
-
----
+- **GitHub Repository**: https://github.com/Harshk012/faq-chatbot
+- **Backend Image**: https://hub.docker.com/r/harsh782/faq-chatbot-backend
+- **Frontend Image**: https://hub.docker.com/r/harsh782/faq-chatbot-frontend
+- **CI/CD Pipeline**: https://github.com/Harshk012/faq-chatbot/actions
 
 ## 📊 Evaluation Checklist
 
